@@ -18,4 +18,4 @@ If you have npm and http-server globally installed:
 
 If you have XAMPP, WAMPP, MAMP, Mongoose or any other local server application, run that.
 
-If you have tomcat or any other local server script, use that.
+If you have any other local server script, use that.
