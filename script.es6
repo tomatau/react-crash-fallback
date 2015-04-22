@@ -1,5 +1,5 @@
 var TodoApp = React.createClass({
-  getInitialState: function(){
+  getInitialState(){
     return {
       todos: [
         'demonstrate state',
@@ -10,7 +10,7 @@ var TodoApp = React.createClass({
       ]
     };
   },
-  render: function(){
+  render(){
     return (
       <div className="todo-app">
         <form>
@@ -20,9 +20,9 @@ var TodoApp = React.createClass({
           </fieldset>
         </form>
         <ul>
-          {this.state.todos.map(function(todo, idx){
-            return <li key={idx}>{todo}</li>
-          })}
+          {this.state.todos.map((todo, idx)=>
+            <li key={idx}>{todo}</li>
+          )}
         </ul>
       </div>
     )
